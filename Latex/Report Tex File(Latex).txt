@@ -1,0 +1,1864 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[a4paper,hmargin={3cm,2.5cm},vmargin={2.5cm,2.5cm}]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{url}
+\usepackage{colortbl}
+\usepackage[dvips, bookmarks, colorlinks=false, pdfborder={0 0 0}, pdftitle={HTML 5 Seminar Report}, pdfauthor={Jishnu Mohan}, pdfsubject={HTML5}, pdfkeywords={html, html5}]{hyperref}
+\usepackage{fancybox}
+\usepackage{pslatex}
+
+\begin{document}
+
+\fancypage{\setlength{\fboxsep}{10pt}\doublebox}{}
+\renewcommand\bibname{References} 
+
+\begin{titlepage}
+\begin{center}
+\centering
+\includegraphics[width=\textwidth]{Logo.jpg} 
+\textup{\large Project Report On : }\\[1.0cm]
+
+\begin{LARGE}{\textbf {MARVEL AVENGER'S GAME}}\end{LARGE}\\[3.0cm]
+\begin{flushleft}
+\hspace{2.8cm}\textbf{Program :} Information Technology\\
+\hspace{2.8cm}\textbf{Course Name :} Programming in Java\\
+\hspace{2.8cm}\textbf{Course Code :} PRJ190901\\
+\hspace{2.8cm}\textbf{Semester :} III\\
+\hspace{2.8cm}\textbf{Academic Term :} 17$^{th}$ August - 8$^{th}$ December\\
+\hspace{2.8cm}\textbf{Mini Project Title :} Marvel Avenger's Game\\
+\hspace{2.8cm}\textbf{Student Name :} Mihir Rajesh Panchal\\
+\hspace{2.8cm}\textbf{Roll No :} T018\\
+\hspace{2.8cm}\textbf{SAP ID :} 57498200018\\
+\end{flushleft}
+\vfill
+\begin{large}\textbf{Mihir Rajesh Panchal} \\\end{large}
+\vfill
+
+\LARGE{Department of Information Technology}\\
+\normalsize
+\textsc{SHRI BHAGUBHAI MAFATLAL POLYTECHNIC}\\
+\vspace{0.5cm}
+\end{center}
+\end{titlepage}
+
+% set numbering as roman numbers.
+\pagenumbering{roman} 
+
+\newpage
+% this will auto generate table of contents based on chapters and sub sections
+\tableofcontents
+% this will auto generate list of figures based on their captions
+
+\newpage
+% Start aracbic numbering
+\pagenumbering{arabic}
+
+\chapter{Description}
+\setlength{\parindent}{10ex}
+Marvel Avenger's Game is a Swing based Java Frame project developed for children aged 7-16.The Main Objective of the game is to achieve points and beat high scores with some learning of mathematical concepts while playing the game.\\\\
+\textbf{Basic Idea of Project :} Choose your Hero (Avenger) and take on a fight with Villain to save the day from destruction.Attack the Villain with four unique attacks and kill the villain by lowering it's Hitpoints to win!.\\\\
+\textbf{Problem Statement : }Create a Java Jframe program to develop a game with 4 Heroes and 2 Villain with the following Functionalties included in Game\\
+\begin{enumerate}
+  \item Play Game
+  \item Game Guide
+  \item Battle Log
+  \item Rate Game
+  \item Credits
+\end{enumerate}
+
+\chapter{Features}
+Marvel Avenger's Game includes various features which apply basic to complex Java \\concepts which include : 
+\begin{itemize}
+  \item Play Game
+  \item Game Guide
+  \item Battle Log
+  \item Rate Game
+  \item Credits
+\end{itemize}
+Java Concepts used in Marvel Avenger's Game are as follows : 
+\begin{itemize}
+  \item Operators
+  \item Control Statements
+  \item Inheritance
+  \item Packages and Interfaces
+  \item String Handling
+  \item Exception Handling
+  \item Multithreaded Programming
+  \item Event Handling
+  \item Java Swing
+\end{itemize}
+
+\chapter{Hardware and Software Requirements}
+
+Hardware Requirements :
+\begin{itemize}
+  \item Windows 7 or Higher (32 bit or 64 bit)
+  \item Intel i3 processor / AMD Ryzen 3 or Higher
+  \item Minimum 2GB/4GB Ram
+  \item 250 GB free disk space
+  \item Speakers
+\end{itemize}
+Software Requirements :
+\begin{itemize}
+  \item[*] JDK 16
+  \item[*] Sublime Text
+\end{itemize}
+\textbf{JDK 16}\\
+\includegraphics[width=5cm]{Java_Logo.png}\\
+Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA). Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture.
+\chapter{Module Implementation}
+Marvel Avenger's Game is made Modularly by creating a new Java Swing File and Linking each files with each other by encapsulation of public reference of variables and methods.\\\\
+Java Swing Files are as follows : 
+\begin{enumerate}
+  \item PlayGame.java
+  \item PlayGameWithMusic.java
+  \item Introduction.java
+  \item MainMenu.java
+  \item Fight.java
+  \item GameGuide.java
+  \item Description.java
+  \item Reviews.java
+  \item Credits.java
+\end{enumerate}
+
+\begin{table}
+\centering
+\begin{tabular}{|l|l|} 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}PlayGame.java}                                      \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+Main()                                    & Creates an Objects of Introduction Class                         \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}PlayGameWithMusic.java}                             \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+Main()                                    & Plays audio in loop while creating Object of Introduction Class  \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}Introduction.java}                                  \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+Introduction()                            & Sets the GUI of Introduction                                     \\ 
+\hline
+Main()                                    & Creates an Objects of Introduction Class                         \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}MainMenu.java}                                      \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+MainMenu()                                & Sets the GUI of MainMenu~                                        \\ 
+\hline
+Main()                                    & Creates an Objects of MainMenu Class                             \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}Fight.java}                                         \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+Fight()                                   & Sets the GUI of Fight~~                                          \\ 
+\hline
+panel1close()                             & Changes GUI in Panel 1 to setVisible(false)                      \\ 
+\hline
+panel2open()                              & Changes GUI in Panel 2 to setVisible(true)                       \\ 
+\hline
+panel2Listeners()                         & Adds Listeners to Panel 2                                        \\ 
+\hline
+panel2close()                             & Changes GUI in Panel 2 to setVisible(false)                      \\ 
+\hline
+setmainFight()                            & Instantiates GUI according to Panel 1 and Panel 2                \\ 
+\hline
+mainFightBtnListeners()                   & Adds Listeners to Main Fight Panel                               \\ 
+\hline
+deathCheck()                              & Checks the Death of any Character                                \\ 
+\hline
+mainFightPanelClose()                     & Changes GUI in Main Fight to setVisible(true)                    \\ 
+\hline
+resultScreen()                            & Sets the GUI of Result according to Main Fight                   \\ 
+\hline
+Main()                                    & Creates an Objects of Fight Class                                \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}Game Guide}                                         \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+GameGuide                                 & Sets the GUI of GameGuide~~                                      \\ 
+\hline
+Main()                                    & Creates an Objects of GameGuide Class                            \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}Description.java}                                   \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+guideDecider()                            & Sets GUI according to Button pressed in GameGuide                \\ 
+\hline
+Description()                             & Sets the GUI of Description~~                                    \\ 
+\hline
+Main()                                    & Creates an Objects of Description Class                          \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}Reviews.java}                                       \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+Reviews                                   & Sets the GUI of Reviews                                          \\ 
+\hline
+Main()                                    & Creates an Objects of Reviews Class                              \\ 
+\hline
+\multicolumn{2}{|c|}{{\cellcolor[rgb]{0.502,0.502,0.502}}Credits.java}                                       \\ 
+\hline
+\rowcolor[rgb]{0.753,0.753,0.753} Methods & Description                                                      \\ 
+\hline
+Credits()                                 & Sets the GUI of Credits~~                                        \\ 
+\hline
+Main()                                    & Creates an Object of Credits Class                               \\
+\hline
+\end{tabular}
+\end{table}
+\chapter{Source Code}
+\textbf{PlayGameWithMusic.java}
+\begin{verbatim}
+import java.io.File; 
+import java.io.IOException; 
+import java.util.Scanner; 
+import javax.sound.sampled.*;
+
+public class PlayGameWithMusic 
+{
+public static void main(String[] args) throws 
+UnsupportedAudioFileException, IOException, LineUnavailableException
+{
+    File file = new File("Marvel's Avengers Game - Main Theme.wav");
+    AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
+    Clip clip = AudioSystem.getClip();
+    clip.open(audioStream);
+    clip.loop(Clip.LOOP_CONTINUOUSLY);
+    Introduction i=new Introduction();
+}
+}
+\end{verbatim}
+\textbf{PlayGame.java}
+\begin{verbatim}
+class PlayGame
+{
+	public static void main(String args[])
+	{
+		Introduction i=new Introduction();
+	}
+}
+\end{verbatim}
+\textbf{Introduction.java}
+\begin{verbatim}
+import java.awt.*;  
+import javax.swing.JFrame;  
+import java.awt.event.*;
+import javax.swing.*;
+
+class Introduction extends JFrame
+{  
+	Introduction()
+	{	
+		JLabel background;
+		JButton play;
+		setSize(1570,840);
+		setLayout(null);
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		ImageIcon img=new ImageIcon("BackGround.jpg");
+		background=new JLabel("",img,JLabel.CENTER);
+		background.setBounds(0,0,1570,770);
+		add(background);
+		play=new JButton(new ImageIcon("PlayGame.png"));
+		play.setBounds(200,500,361,79);
+		play.setBackground(Color.BLACK);
+		background.add(play);
+		play.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				MainMenu m=new MainMenu();
+			}
+		});
+		setVisible(true);
+	}
+    public static void main(String[] args) 
+    {  
+        Introduction m=new Introduction();
+    }  
+}  
+\end{verbatim}
+\textbf{MainMenu.java}
+\begin{verbatim}
+import java.awt.*;  
+import javax.swing.JFrame;  
+import java.awt.event.*;
+import javax.swing.*;
+
+class MainMenu extends JFrame
+{
+	MainMenu()
+	{
+		JLabel mm,background,logo;
+		JButton pg,gg,rg,c,exit,back;
+		//declaration
+		setSize(1570,840);
+		setLayout(null);
+		//background image
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		ImageIcon img=new ImageIcon("BImage.png");
+		background=new JLabel("",img,JLabel.CENTER);
+		background.setBounds(0,0,1570,770);
+		add(background);
+		logo=new JLabel(new ImageIcon("logo.png"));
+		logo.setBounds(645,280,214,236);
+		background.add(logo);
+		//background image finish
+		mm=new JLabel(new ImageIcon("MMbtn.png"));
+		mm.setBounds(620,50,266,79);
+		background.add(mm);
+		//mmbutton
+		pg=new JButton(new ImageIcon("PlayGame.png"));
+		pg.setBounds(150,250,361,79);
+		pg.setBackground(Color.BLACK);
+		background.add(pg);
+		//play game button
+		gg=new JButton(new ImageIcon("GameGuide.png"));
+		gg.setBounds(995,250,360,79);
+		gg.setBackground(Color.BLACK);
+		background.add(gg);
+		//game Guide
+		rg=new JButton(new ImageIcon("RateGame.png"));
+		rg.setBounds(150,500,360,79);
+		rg.setBackground(Color.BLACK);
+		background.add(rg);	
+		//rate game
+		c=new JButton(new ImageIcon("Credits.png"));
+		c.setBounds(995,500,360,79);
+		c.setBackground(Color.BLACK);
+		background.add(c);
+		//credits
+		exit=new JButton(new ImageIcon("Exit.png"));
+		exit.setBounds(610,600,291,79);
+		exit.setBackground(Color.BLACK);
+		background.add(exit);
+		//exit
+		back=new JButton(new ImageIcon("backbtn.png"));
+		back.setBounds(0,0,100,100);
+		back.setBackground(Color.BLACK);
+		background.add(back);
+
+		//all Actions
+		back.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				Introduction i=new Introduction();
+			}
+		});
+		pg.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				Fight f=new Fight();
+			}
+		});
+		gg.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				GameGuide gg=new GameGuide();
+			}
+		});
+		rg.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				Reviews r=new Reviews();
+			}
+		});
+		c.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				Credits c=new Credits();
+			}
+		});
+		exit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				System.out.println("Game Ended");
+				System.exit(0);
+			}
+		});
+		setVisible(true);
+	}
+	public static void main (String args[])
+	{
+		MainMenu m=new MainMenu();
+	}
+}
+\end{verbatim}
+\textbf{Fight.java}
+\begin{verbatim}
+import java.awt.*;  
+import javax.swing.JFrame;  
+import java.awt.event.*;
+import javax.swing.*;
+import java.io.*;
+
+class Fight extends JFrame  
+{
+	JLabel ac,vc,background,avgimg,villimg,fghtnm,versus,logo;
+	JLabel result,resulticon,points,resultgreet;
+	JButton bav1,bav2,bav3,bav4,bv1,bv2,exit,back;
+	JButton a1,a2,a3,a4,v1,v2,v3,v4;
+	JProgressBar healtha,healthv;
+	JPanel ahpanel,vhpanel;
+	String fightname,avgname,villname,resulttxt,rtxt1,rtxt2;
+	int hpa,hpv,deathflag=1,ohpv;
+	public int choosea,choosev;
+	Fight()
+	{
+		//declaration
+		setSize(1570,840);
+		setLayout(null);
+		//background image
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		ImageIcon img=new ImageIcon("BImage.png");
+		background=new JLabel("",img,JLabel.CENTER);
+		background.setBounds(0,0,1570,770);
+		add(background);
+
+		//background image finish
+		ac=new JLabel(new ImageIcon("ac.png"));
+		ac.setBounds(620,50,343,79);
+		background.add(ac);
+
+		vc=new JLabel(new ImageIcon("vc.png"));
+		vc.setBounds(620,50,343,79);
+		background.add(vc);
+		vc.setVisible(false);
+
+		//mmbutton
+		bav1=new JButton(new ImageIcon("IMbtn.png"));
+		bav1.setBounds(150,250,444,79);
+		bav1.setBackground(Color.BLACK);
+		background.add(bav1);
+
+		bav2=new JButton(new ImageIcon("Hbtn.png"));
+		bav2.setBounds(995,250,444,79);
+		bav2.setBackground(Color.BLACK);
+		background.add(bav2);
+
+		bav3=new JButton(new ImageIcon("Tbtn.png"));
+		bav3.setBounds(150,500,444,79);
+		bav3.setBackground(Color.BLACK);
+		background.add(bav3);	
+
+		bav4=new JButton(new ImageIcon("CAbtn.png"));
+		bav4.setBounds(995,500,444,79);
+		bav4.setBackground(Color.BLACK);
+		background.add(bav4);
+
+
+		bv1=new JButton(new ImageIcon("Thanosbtn.png"));
+		bv1.setBounds(150,350,445,79);
+		bv1.setBackground(Color.BLACK);
+		background.add(bv1);
+		bv1.setVisible(false);
+
+		bv2=new JButton(new ImageIcon("Lokibtn.png"));
+		bv2.setBounds(950,350,444,79);
+		bv2.setBackground(Color.BLACK);
+		background.add(bv2);
+		bv2.setVisible(false);
+
+		exit=new JButton(new ImageIcon("Exit.png"));
+		exit.setBounds(1200,650,291,79);
+		exit.setBackground(Color.BLACK);
+		background.add(exit);
+		//exit
+		back=new JButton(new ImageIcon("backbtn.png"));
+		back.setBounds(0,0,100,100);
+		back.setBackground(Color.BLACK);
+		background.add(back);
+
+		//all Actions
+		back.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				MainMenu m=new MainMenu();
+			}
+		});
+		bav1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				choosea=1;
+				panel1close();
+			}
+		});
+		bav2.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				choosea=2;
+				panel1close();
+			}
+		});
+		bav3.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				choosea=3;
+				panel1close();
+			}
+		});
+		bav4.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				choosea=4;
+				panel1close();
+			}
+		});
+		exit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				panel1close();
+				setVisible(false);
+				System.out.println("Game Ended");
+				System.exit(0);
+			}
+		});
+		setVisible(true);
+	}
+
+	public void panel1close()
+	{
+		bav1.setVisible(false);
+		bav2.setVisible(false);
+		bav3.setVisible(false);
+		bav4.setVisible(false);
+		ac.setVisible(false);
+		panel2open();
+	}
+
+	public void panel2open()
+	{
+		bv1.setVisible(true);
+		bv2.setVisible(true);
+		vc.setVisible(true);
+		panel2Listeners();
+	}
+
+	public void panel2Listeners()
+	{
+		bv1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				choosev=5;
+				panel2close();
+			}
+		});	
+		bv2.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				choosev=6;
+				panel2close();
+			}
+		});	
+	}
+
+	public void panel2close()
+	{
+		bv1.setVisible(false);
+		bv2.setVisible(false);
+		vc.setVisible(false);
+		exit.setVisible(false);
+		setmainFight();
+	}
+
+	public void setmainFight()
+	{
+		if(choosea==1)
+		{
+			hpa=440;
+			fightname="IRON MAN v/s ";
+			avgname="IRON MAN";
+			avgimg=new JLabel(new ImageIcon("IMimage.png"));
+			avgimg.setBounds(300,150,300,336);
+			background.add(avgimg);
+
+			a1=new JButton(new ImageIcon("IMa1.png"));
+			a1.setBounds(150,525,444,93);
+			a1.setBackground(Color.BLACK);
+			background.add(a1);	
+
+			a2=new JButton(new ImageIcon("IMa2.png"));
+			a2.setBounds(950,525,444,93);
+			a2.setBackground(Color.BLACK);
+			background.add(a2);	
+
+			a3=new JButton(new ImageIcon("IMa3.png"));
+			a3.setBounds(150,650,444,93);
+			a3.setBackground(Color.BLACK);
+			background.add(a3);	
+
+			a4=new JButton(new ImageIcon("IMa4.png"));
+			a4.setBounds(950,650,444,93);
+			a4.setBackground(Color.BLACK);
+			background.add(a4);		
+		}
+		else if(choosea==2)
+		{
+			hpa=600;
+			fightname="HULK v/s ";
+			avgname="HULK";
+			avgimg=new JLabel(new ImageIcon("Himage.png"));
+			avgimg.setBounds(300,150,300,336);
+			background.add(avgimg);
+
+			a1=new JButton(new ImageIcon("Ha1.png"));
+			a1.setBounds(150,525,444,93);
+			a1.setBackground(Color.BLACK);
+			background.add(a1);	
+
+			a2=new JButton(new ImageIcon("Ha2.png"));
+			a2.setBounds(950,525,444,93);
+			a2.setBackground(Color.BLACK);
+			background.add(a2);	
+
+			a3=new JButton(new ImageIcon("Ha3.png"));
+			a3.setBounds(150,650,444,93);
+			a3.setBackground(Color.BLACK);
+			background.add(a3);	
+
+			a4=new JButton(new ImageIcon("Ha4.png"));
+			a4.setBounds(950,650,444,93);
+			a4.setBackground(Color.BLACK);
+			background.add(a4);	
+		}
+		else if(choosea==3)
+		{
+			hpa=400;
+			fightname="THOR v/s ";
+			avgname="THOR";
+			avgimg=new JLabel(new ImageIcon("Timage.png"));
+			avgimg.setBounds(300,150,300,336);
+			background.add(avgimg);
+
+			a1=new JButton(new ImageIcon("Ta1.png"));
+			a1.setBounds(150,525,444,93);
+			a1.setBackground(Color.BLACK);
+			background.add(a1);	
+
+			a2=new JButton(new ImageIcon("Ta2.png"));
+			a2.setBounds(950,525,444,93);
+			a2.setBackground(Color.BLACK);
+			background.add(a2);	
+
+			a3=new JButton(new ImageIcon("Ta3.png"));
+			a3.setBounds(150,650,444,93);
+			a3.setBackground(Color.BLACK);
+			background.add(a3);	
+
+			a4=new JButton(new ImageIcon("Ta4.png"));
+			a4.setBounds(950,650,444,93);
+			a4.setBackground(Color.BLACK);
+			background.add(a4);	
+		}
+		else if(choosea==4)
+		{
+			hpa=520;
+			fightname="CAPTAIN AMERICA v/s ";
+			avgname="CAPTAIN AMERICA";
+			avgimg=new JLabel(new ImageIcon("CAimage.png"));
+			avgimg.setBounds(300,150,300,336);
+			background.add(avgimg);
+
+			a1=new JButton(new ImageIcon("CAa1.png"));
+			a1.setBounds(150,525,444,93);
+			a1.setBackground(Color.BLACK);
+			background.add(a1);	
+
+			a2=new JButton(new ImageIcon("CAa2.png"));
+			a2.setBounds(950,525,444,93);
+			a2.setBackground(Color.BLACK);
+			background.add(a2);	
+
+			a3=new JButton(new ImageIcon("CAa3.png"));
+			a3.setBounds(150,650,444,93);
+			a3.setBackground(Color.BLACK);
+			background.add(a3);	
+
+			a4=new JButton(new ImageIcon("CAa4.png"));
+			a4.setBounds(950,650,444,93);
+			a4.setBackground(Color.BLACK);
+			background.add(a4);	
+		}
+		//
+		if(choosev==5)
+		{
+			ohpv=960;
+			hpv=960;
+			fightname=fightname+"THANOS";
+			villname="THANOS";
+			villimg=new JLabel(new ImageIcon("Thimage.png"));
+			villimg.setBounds(950,120,300,412);
+			background.add(villimg);
+		}
+		else if(choosev==6)
+		{
+			ohpv=480;
+			hpv=480;
+			fightname=fightname+"LOKI";
+			villname="LOKI";
+			villimg=new JLabel(new ImageIcon("Limage.png"));
+			villimg.setBounds(950,100,300,412);
+			background.add(villimg);
+		}
+
+		fghtnm=new JLabel(fightname,JLabel.CENTER);
+		fghtnm.setBounds(0,25,1560,79);
+		fghtnm.setForeground(Color.yellow);
+		fghtnm.setFont(new Font("Verdana", Font.PLAIN, 40));
+		//fghtnm.setSize(300,300);
+		background.add(fghtnm);
+		System.out.println(fightname);
+
+		//health bars
+		ahpanel=new JPanel();
+		ahpanel.setBounds(200,150,30,300);
+		ahpanel.setBackground(Color.white);
+		background.add(ahpanel);
+		mainFightBtnListeners();
+
+		vhpanel=new JPanel();
+		vhpanel.setBounds(1350,150,30,300);
+		vhpanel.setBackground(Color.white);
+		background.add(vhpanel);
+
+		healtha=new JProgressBar(JProgressBar.VERTICAL,0,hpa);
+		healtha.setPreferredSize(new Dimension(30,300));
+		healtha.setStringPainted(true);
+		healtha.setForeground(Color.green);
+		healtha.setValue(hpa);
+		ahpanel.add(healtha);
+
+		healthv=new JProgressBar(JProgressBar.VERTICAL,0,hpv);
+		healthv.setPreferredSize(new Dimension(30,300));
+		healtha.setStringPainted(true);
+		healthv.setForeground(Color.green);
+		healthv.setValue(hpv);
+		vhpanel.add(healthv);
+
+		versus=new JLabel(new ImageIcon("Versus.png"),JLabel.CENTER);
+		versus.setBounds(0,100,1560,400);
+		background.add(versus);
+
+		logo=new JLabel(new ImageIcon("alogo.png"));
+		logo.setBounds(675,500,214,236);
+		background.add(logo);
+
+		mainFightBtnListeners();
+	}
+
+	public void mainFightBtnListeners()
+	{
+		if(choosea==1)
+		{
+			a1.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-80;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-30;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-50;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a2.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-60;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-10;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-30;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a3.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-40;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-20;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-20;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a4.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-20;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-15;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-35;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+		}
+		else if(choosea==2)
+		{
+			a1.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-20;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-30;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-50;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a2.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-80;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-10;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-30;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a3.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-40;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-20;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-20;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a4.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-60;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-15;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-35;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+		}
+		else if(choosea==3)
+		{
+			a1.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-60;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-30;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-50;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a2.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-80;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-10;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-30;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a3.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-20;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-20;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-20;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a4.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-40;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-15;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-35;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+		}
+		else if(choosea==4)
+		{
+			a1.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-80;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-30;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-50;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a2.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-40;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-10;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-30;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a3.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-20;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-20;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-20;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+			a4.addActionListener(new ActionListener()
+			{
+				public void actionPerformed(ActionEvent ae)
+				{
+					hpv=hpv-60;
+					healthv.setValue(hpv);
+					if(choosev==5)
+					{
+						hpa=hpa-15;
+					}
+					else if(choosev==6)
+					{
+						hpa=hpa-35;
+					}
+					healtha.setValue(hpa);
+					deathCheck();
+				}
+			});	
+		}
+	}
+	public void deathCheck()
+	{
+		if(hpa<0&&hpv<0)
+		{
+			resulttxt=avgname+" and "+villname+" Killed Each Other";
+			rtxt1="It's A Tie";
+			rtxt2="Points Scored  : "+ohpv;
+			mainFightPanelClose();
+		}
+		else if(hpa<=0&&hpv>0)
+		{
+			resulttxt=villname+" Killed "+avgname;
+			rtxt1="Sorry You Lost!!!";
+			rtxt2="Points Scored : 0";	
+			mainFightPanelClose();
+		}
+		else if(hpv<=0&&hpa>0)
+		{
+			resulttxt=avgname+" Killed "+villname;
+			rtxt1="Congratulations You Won!!!";
+			rtxt2="Points Scored : "+ohpv;	
+			mainFightPanelClose();
+		}
+	}
+	public void mainFightPanelClose()
+	{
+		avgimg.setVisible(false);
+		villimg.setVisible(false);
+		a1.setVisible(false);
+		a2.setVisible(false);
+		a3.setVisible(false);
+		a4.setVisible(false);
+		fghtnm.setVisible(false);
+		vhpanel.setVisible(false);
+		ahpanel.setVisible(false);
+		versus.setVisible(false);
+		logo.setVisible(false);
+
+		resultScreen();
+	}
+	public void resultScreen()
+	{
+		exit.setVisible(true);
+		resulticon=new JLabel(new ImageIcon("Result.png"));
+		resulticon.setBounds(620,50,287,74);
+		background.add(resulticon);
+
+		result=new JLabel(resulttxt,JLabel.CENTER);
+		result.setBounds(0,200,1560,79);
+		result.setForeground(Color.yellow);
+		result.setFont(new Font("Verdana", Font.PLAIN, 40));
+		background.add(result);
+
+		resultgreet=new JLabel(rtxt1,JLabel.CENTER);
+		resultgreet.setBounds(0,300,1560,79);
+		resultgreet.setForeground(Color.yellow);
+		resultgreet.setFont(new Font("Verdana", Font.PLAIN, 40));
+		background.add(resultgreet);
+
+		points=new JLabel(rtxt2,JLabel.CENTER);
+		points.setBounds(0,400,1560,79);
+		points.setForeground(Color.yellow);
+		points.setFont(new Font("Verdana", Font.PLAIN, 40));
+		background.add(points);
+
+		try
+		{
+			String fileresult=fightname+"\t\t\t"+resulttxt+"\t\t\t"+rtxt2+"\n";
+			char rtext[]=fileresult.toCharArray();
+			FileWriter f1 = new FileWriter("(((((Battle Log.txt",true);
+			f1.write(rtext);
+			f1.close();
+		}
+		catch(IOException io)
+		{
+			System.out.println("IOException caught");
+		}
+	}
+
+	public static void main (String args[])
+	{
+		Fight f=new Fight();
+	}
+}
+\end{verbatim}
+\textbf{GameGuide.java}
+\begin{verbatim}
+import java.awt.*;  
+import javax.swing.JFrame;  
+import java.awt.event.*;
+import javax.swing.*;
+
+class GameGuide extends JFrame
+{
+	public static int decider;
+	GameGuide()
+	{
+		JLabel gg,background;
+		JButton exit,back,av1,av2,av3,av4,v1,v2;
+		//declaration
+		setSize(1570,840);
+		setLayout(null);
+		//background image
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		ImageIcon img=new ImageIcon("BImage.png");
+		background=new JLabel("",img,JLabel.CENTER);
+		background.setBounds(0,0,1570,770);
+		add(background);
+		//background image finish
+		gg=new JLabel(new ImageIcon("GameGuide.png"));
+		gg.setBounds(560,50,362,79);
+		background.add(gg);
+		//mmbutton
+		exit=new JButton(new ImageIcon("Exit.png"));
+		exit.setBounds(1200,650,291,79);
+		exit.setBackground(Color.BLACK);
+		background.add(exit);
+		//exit
+
+		back=new JButton(new ImageIcon("backbtn.png"));
+		back.setBounds(0,0,100,100);
+		back.setBackground(Color.BLACK);
+		background.add(back);
+
+		av1=new JButton(new ImageIcon("IMbtn.png"));
+		av1.setBounds(150,200,444,79);
+		av1.setBackground(Color.BLACK);
+		background.add(av1);
+
+		av2=new JButton(new ImageIcon("Hbtn.png"));
+		av2.setBounds(900,200,444,79);
+		av2.setBackground(Color.BLACK);
+		background.add(av2);
+
+		av3=new JButton(new ImageIcon("Tbtn.png"));
+		av3.setBounds(150,350,444,79);
+		av3.setBackground(Color.BLACK);
+		background.add(av3);
+
+		av4=new JButton(new ImageIcon("CAbtn.png"));
+		av4.setBounds(900,350,444,79);
+		av4.setBackground(Color.BLACK);
+		background.add(av4);
+
+		v1=new JButton(new ImageIcon("Thanosbtn.png"));
+		v1.setBounds(150,500,444,79);
+		v1.setBackground(Color.BLACK);
+		background.add(v1);
+
+		v2=new JButton(new ImageIcon("Lokibtn.png"));
+		v2.setBounds(900,500,444,79);
+		v2.setBackground(Color.BLACK);
+		background.add(v2);
+
+		//all actions
+		av1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				GameGuide.decider=1;
+				Description d=new Description();
+				d.guideDecider(GameGuide.decider);
+				d.setVisible(true);
+				setVisible(false);
+			}
+		});
+		av2.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				GameGuide.decider=2;
+				Description d=new Description();
+				d.guideDecider(GameGuide.decider);
+				d.setVisible(true);
+				setVisible(false);
+			}
+		});
+		av3.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				GameGuide.decider=3;
+				Description d=new Description();
+				d.guideDecider(GameGuide.decider);
+				d.setVisible(true);
+				setVisible(false);
+			}
+		});
+		av4.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				GameGuide.decider=4;
+				Description d=new Description();
+				d.guideDecider(GameGuide.decider);
+				d.setVisible(true);
+				setVisible(false);
+			}
+		});
+		v1.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				GameGuide.decider=5;
+				Description d=new Description();
+				d.guideDecider(GameGuide.decider);
+				d.setVisible(true);
+				setVisible(false);
+			}
+		});
+		v2.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				GameGuide.decider=6;
+				Description d=new Description();
+				d.guideDecider(GameGuide.decider);
+				d.setVisible(true);
+				setVisible(false);
+			}
+		});
+		back.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				MainMenu m=new MainMenu();
+			}
+		});
+		exit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				System.out.println("Game Ended");
+				System.exit(0);
+			}
+		});
+		setVisible(true);
+	}
+	public static void main(String args[])
+	{
+		GameGuide g=new GameGuide();
+	}
+}
+\end{verbatim}
+\textbf{Description.java}
+\begin{verbatim}
+import java.awt.*;  
+import javax.swing.JFrame;  
+import java.awt.event.*;
+import javax.swing.*;
+
+class Description extends JFrame
+{
+	int no,flag=0;
+	JLabel title,dtxt1,dtxt2,dtxt3,dtxt4,dtxt5,dtxt6,img;
+
+	public void guideDecider(int d)
+	{
+		no=d;
+		if(no==1)
+		{
+			title=new JLabel(new ImageIcon("IMbtn.png"));
+			title.setBounds(540,50,444,79);
+			add(title);
+
+			img=new JLabel(new ImageIcon("IMimage.png"));
+			img.setBounds(1000,232,300,336);
+			add(img);
+
+			dtxt1=new JLabel(new ImageIcon("IM1.png"));
+			dtxt1.setBounds(100,150,512,73);
+			add(dtxt1);
+
+			dtxt2=new JLabel(new ImageIcon("IM2.png"));
+			dtxt2.setBounds(100,250,373,73);
+			add(dtxt2);
+
+			dtxt3=new JLabel(new ImageIcon("IM3.png"));
+			dtxt3.setBounds(100,350,586,73);
+			add(dtxt3);
+
+			dtxt4=new JLabel(new ImageIcon("IM4.png"));
+			dtxt4.setBounds(100,450,623,73);
+			add(dtxt4);
+
+			dtxt5=new JLabel(new ImageIcon("IM5.png"));
+			dtxt5.setBounds(100,550,776,73);
+			add(dtxt5);
+
+			dtxt6=new JLabel(new ImageIcon("IM6.png"));
+			dtxt6.setBounds(100,650,674,73);
+			add(dtxt6);
+		}
+		else if(no==2)
+		{
+			title=new JLabel(new ImageIcon("Hbtn.png"));
+			title.setBounds(540,50,444,79);
+			add(title);
+			title.setVisible(true);
+
+			img=new JLabel(new ImageIcon("Himage.png"));
+			img.setBounds(1000,232,300,336);
+			add(img);
+			img.setVisible(true);
+
+			dtxt1=new JLabel(new ImageIcon("H1.png"));
+			dtxt1.setBounds(100,150,438,73);
+			add(dtxt1);
+
+			dtxt2=new JLabel(new ImageIcon("H2.png"));
+			dtxt2.setBounds(100,250,296,73);
+			add(dtxt2);
+
+			dtxt3=new JLabel(new ImageIcon("H3.png"));
+			dtxt3.setBounds(100,350,607,73);
+			add(dtxt3);
+
+			dtxt4=new JLabel(new ImageIcon("H4.png"));
+			dtxt4.setBounds(100,450,514,73);
+			add(dtxt4);
+
+			dtxt5=new JLabel(new ImageIcon("H5.png"));
+			dtxt5.setBounds(100,550,680,73);
+			add(dtxt5);
+
+			dtxt6=new JLabel(new ImageIcon("H6.png"));
+			dtxt6.setBounds(100,650,664,73);
+			add(dtxt6);
+
+		}
+		else if(no==3)
+		{
+			title=new JLabel(new ImageIcon("Tbtn.png"));
+			title.setBounds(540,50,444,79);
+			add(title);
+			title.setVisible(true);
+
+			img=new JLabel(new ImageIcon("Timage.png"));
+			img.setBounds(1000,178,300,444);
+			add(img);
+			img.setVisible(true);
+
+			dtxt1=new JLabel(new ImageIcon("T1.png"));
+			dtxt1.setBounds(100,150,448,73);
+			add(dtxt1);
+
+			dtxt2=new JLabel(new ImageIcon("T2.png"));
+			dtxt2.setBounds(100,250,304,73);
+			add(dtxt2);
+
+			dtxt3=new JLabel(new ImageIcon("T3.png"));
+			dtxt3.setBounds(100,350,747,73);
+			add(dtxt3);
+
+			dtxt4=new JLabel(new ImageIcon("T4.png"));
+			dtxt4.setBounds(100,450,689,73);
+			add(dtxt4);
+
+			dtxt5=new JLabel(new ImageIcon("T5.png"));
+			dtxt5.setBounds(100,550,659,73);
+			add(dtxt5);
+
+			dtxt6=new JLabel(new ImageIcon("T6.png"));
+			dtxt6.setBounds(100,650,634,73);
+			add(dtxt6);
+
+		}
+		else if(no==4)
+		{
+			title=new JLabel(new ImageIcon("CAbtn.png"));
+			title.setBounds(540,50,444,79);
+			add(title);
+			title.setVisible(true);
+
+			img=new JLabel(new ImageIcon("CAimage.png"));
+			img.setBounds(1000,190,300,419);
+			add(img);
+			img.setVisible(true);
+
+			dtxt1=new JLabel(new ImageIcon("CA1.png"));
+			dtxt1.setBounds(100,150,680,73);
+			add(dtxt1);
+
+			dtxt2=new JLabel(new ImageIcon("CA2.png"));
+			dtxt2.setBounds(100,250,539,73);
+			add(dtxt2);
+
+			dtxt3=new JLabel(new ImageIcon("CA3.png"));
+			dtxt3.setBounds(100,350,598,73);
+			add(dtxt3);
+
+			dtxt4=new JLabel(new ImageIcon("CA4.png"));
+			dtxt4.setBounds(100,450,670,73);
+			add(dtxt4);
+
+			dtxt5=new JLabel(new ImageIcon("CA5.png"));
+			dtxt5.setBounds(100,550,600,73);
+			add(dtxt5);
+
+			dtxt6=new JLabel(new ImageIcon("CA6.png"));
+			dtxt6.setBounds(100,650,602,73);
+			add(dtxt6);
+
+		}
+		else if(no==5)
+		{
+			title=new JLabel(new ImageIcon("Thanosbtn.png"));
+			title.setBounds(540,50,444,79);
+			add(title);
+			title.setVisible(true);
+
+			img=new JLabel(new ImageIcon("Thimage.png"));
+			img.setBounds(1000,194,300,412);
+			add(img);
+			img.setVisible(true);
+
+			dtxt1=new JLabel(new ImageIcon("TH1.png"));
+			dtxt1.setBounds(100,150,490,73);
+			add(dtxt1);
+
+			dtxt2=new JLabel(new ImageIcon("TH2.png"));
+			dtxt2.setBounds(100,250,352,73);
+			add(dtxt2);
+
+			dtxt3=new JLabel(new ImageIcon("TH3.png"));
+			dtxt3.setBounds(100,350,640,73);
+			add(dtxt3);
+
+			dtxt4=new JLabel(new ImageIcon("TH4.png"));
+			dtxt4.setBounds(100,450,618,73);
+			add(dtxt4);
+
+			dtxt5=new JLabel(new ImageIcon("TH5.png"));
+			dtxt5.setBounds(100,550,752,73);
+			add(dtxt5);
+
+			dtxt6=new JLabel(new ImageIcon("TH6.png"));
+			dtxt6.setBounds(100,650,569,73);
+			add(dtxt6);
+
+		}
+		else if(no==6)
+		{
+			title=new JLabel(new ImageIcon("Lokibtn.png"));
+			title.setBounds(540,50,444,79);
+			add(title);
+			title.setVisible(true);
+
+			img=new JLabel(new ImageIcon("Limage.png"));
+			img.setBounds(1000,167,300,466);
+			add(img);
+			img.setVisible(true);
+
+			dtxt1=new JLabel(new ImageIcon("L1.png"));
+			dtxt1.setBounds(100,150,422,73);
+			add(dtxt1);
+
+			dtxt2=new JLabel(new ImageIcon("L2.png"));
+			dtxt2.setBounds(100,250,282,73);
+			add(dtxt2);
+
+			dtxt3=new JLabel(new ImageIcon("L3.png"));
+			dtxt3.setBounds(100,350,636,73);
+			add(dtxt3);
+
+			dtxt4=new JLabel(new ImageIcon("L4.png"));
+			dtxt4.setBounds(100,450,535,73);
+			add(dtxt4);
+
+			dtxt5=new JLabel(new ImageIcon("L5.png"));
+			dtxt5.setBounds(100,550,546,73);
+			add(dtxt5);
+
+			dtxt6=new JLabel(new ImageIcon("L6.png"));
+			dtxt6.setBounds(100,650,595,73);
+			add(dtxt6);
+
+		}
+	}
+
+	Description()
+	{
+		JLabel title,background;
+		JButton exit,back;
+		//declaration
+		setSize(1570,840);
+		setLayout(null);
+		//background image
+		setContentPane(new JLabel(new ImageIcon("BImage.png")));
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		back=new JButton(new ImageIcon("backbtn.png"));
+		back.setBounds(0,0,100,100);
+		back.setBackground(Color.BLACK);
+		add(back);
+
+		exit=new JButton(new ImageIcon("Exit.png"));
+		exit.setBounds(1200,650,291,79);
+		exit.setBackground(Color.BLACK);
+		add(exit);
+
+		//add elements
+		
+
+		back.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				GameGuide g=new GameGuide();
+			}
+		});
+		exit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				System.out.println("Game Ended");
+				System.exit(0);
+			}
+		});
+	}
+
+	public static void main(String args[])
+	{
+		//Description d=new Description();
+	}
+}
+\end{verbatim}
+\textbf{Reviews.java}
+\begin{verbatim}
+import java.awt.*;  
+import javax.swing.JFrame;  
+import java.awt.event.*;
+import javax.swing.*;
+import java.io.*;
+
+class Reviews extends JFrame
+{
+	Reviews()
+	{
+		JLabel re,background,rgtxt1,rgtxt2,rgtxt3;
+		JTextField tf1,tf2;
+		JTextArea ta3;
+		JButton submit,exit,back;
+		Font f1,f2,f3;
+		//declaration
+		setSize(1570,840);
+		setLayout(null);
+		//background image
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		ImageIcon img=new ImageIcon("BImage.png");
+		background=new JLabel("",img,JLabel.CENTER);
+		background.setBounds(0,0,1570,770);
+		add(background);
+		//background image finish
+		re=new JLabel(new ImageIcon("RateGame.png"));
+		re.setBounds(580,50,362,79);
+		background.add(re);
+		//mmbutton
+		submit=new JButton(new ImageIcon("Submit.png"));
+		submit.setBounds(610,600,291,79);
+		submit.setBackground(Color.BLACK);
+		background.add(submit);
+
+		exit=new JButton(new ImageIcon("Exit.png"));
+		exit.setBounds(610,600,291,79);
+		exit.setBackground(Color.BLACK);
+		background.add(exit);
+		exit.setVisible(false);
+		//exit
+		back=new JButton(new ImageIcon("backbtn.png"));
+		back.setBounds(0,0,100,100);
+		back.setBackground(Color.BLACK);
+		background.add(back);
+
+		rgtxt1=new JLabel(new ImageIcon("rgtxt1.png"));
+		rgtxt1.setBounds(225,175,274,73);
+		background.add(rgtxt1);
+
+		rgtxt2=new JLabel(new ImageIcon("rgtxt2.png"));
+		rgtxt2.setBounds(225,275,296,73);
+		background.add(rgtxt2);
+
+		rgtxt3=new JLabel(new ImageIcon("rgtxt3.png"));
+		rgtxt3.setBounds(225,375,200,73);
+		background.add(rgtxt3);
+
+		//fonts
+		f1=new Font("SansSerif",Font.BOLD,35);
+		f2=new Font("SansSerif",Font.BOLD,35);
+		f3=new Font("SansSerif",Font.BOLD,35);
+
+		//textfield and areas
+		tf1=new JTextField();
+		tf1.setBounds(600,180,500,50);
+		tf1.setFont(f1);
+		background.add(tf1);
+
+		tf2=new JTextField();
+		tf2.setBounds(600,280,500,50);
+		tf2.setFont(f2);
+		background.add(tf2);
+
+		ta3=new JTextArea();
+		ta3.setBounds(600,380,500,150);
+		ta3.setFont(f3);
+		background.add(ta3);
+
+		back.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				MainMenu m=new MainMenu();
+			}
+		});
+		submit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				String vtf1=tf1.getText();
+				String vtf2=tf2.getText();
+
+				if(vtf1.trim().equals("")||vtf2.trim().equals(""))
+				{
+					System.out.println("Enter All Fields");
+					submit.setVisible(true);
+					exit.setVisible(false);		
+				}
+				else
+				{
+					submit.setVisible(false);
+					exit.setVisible(true);
+					try
+					{
+						String reviewfile=tf1.getText()+"\t\t\t"+tf2.getText()
+						+"\t\t\t"+ta3.getText()+"\n";
+						char reviewtext[]=reviewfile.toCharArray();
+						FileWriter f = new FileWriter("(((((Reviews.txt",true);
+						f.write(reviewtext);
+						f.close();
+					}
+					catch(IOException io)
+					{
+						System.out.println("IOException caught");
+					}
+				}
+			}
+		});
+		//all actions
+		exit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				System.out.println("Game Ended");
+				System.exit(0);
+			}
+		});
+		setVisible(true);
+	}
+	public static void main (String args[])
+	{
+		Reviews r=new Reviews();
+	}
+}
+\end{verbatim}
+\textbf{Credits.java}
+\begin{verbatim}
+import java.awt.*;  
+import javax.swing.JFrame;  
+import java.awt.event.*;
+import javax.swing.*;
+
+class Credits extends JFrame
+{
+	Credits()
+	{
+		JLabel cr,background,txt1,txt2,txt3,txt4;
+		JButton exit,back;
+		//declaration
+		setSize(1570,840);
+		setLayout(null);
+		//background image
+		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		ImageIcon img=new ImageIcon("BImage.png");
+		background=new JLabel("",img,JLabel.CENTER);
+		background.setBounds(0,0,1570,770);
+		add(background);
+		//background image finish
+		cr=new JLabel(new ImageIcon("Credits.png"));
+		cr.setBounds(580,50,362,79);
+		background.add(cr);
+		//mmbutton
+		exit=new JButton(new ImageIcon("Exit.png"));
+		exit.setBounds(610,600,291,79);
+		exit.setBackground(Color.BLACK);
+		background.add(exit);
+		//exit
+
+		back=new JButton(new ImageIcon("backbtn.png"));
+		back.setBounds(0,0,100,100);
+		back.setBackground(Color.BLACK);
+		background.add(back);
+
+		txt1=new JLabel(new ImageIcon("txt1.png"));
+		txt1.setBounds(300,175,441,73);
+		background.add(txt1);
+
+		txt2=new JLabel(new ImageIcon("txt2.png"));
+		txt2.setBounds(300,275,440,73);
+		background.add(txt2);
+
+		txt3=new JLabel(new ImageIcon("txt3.png"));
+		txt3.setBounds(300,375,300,73);
+		background.add(txt3);
+
+		txt4=new JLabel(new ImageIcon("txt4.png"));
+		txt4.setBounds(300,475,823,73);
+		background.add(txt4);
+
+		//all actions
+		back.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				MainMenu m=new MainMenu();
+			}
+		});
+		exit.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent ae)
+			{
+				setVisible(false);
+				System.out.println("Game Ended");
+				System.exit(0);
+			}
+		});
+		setVisible(true);
+	}
+	public static void main (String args[])
+	{
+		Credits c=new Credits();
+	}
+}
+\end{verbatim}
+
+\chapter{Outputs}
+\includegraphics[width=\textwidth]{Readme.jpg}
+\includegraphics[width=\textwidth]{Command Prompt.jpg} 
+\includegraphics[width=\textwidth]{PlayGame.jpg} 
+\includegraphics[width=\textwidth]{MainMenu.jpg}
+\includegraphics[width=\textwidth]{Choose_Avenger.jpg}
+\includegraphics[width=\textwidth]{Choose_Villain.jpg}
+\includegraphics[width=\textwidth]{Fight.jpg}
+\includegraphics[width=\textwidth]{Result.jpg}
+\includegraphics[width=\textwidth]{Battle Log.jpg}
+\includegraphics[width=\textwidth]{GameGuide.jpg}
+\includegraphics[width=\textwidth]{Description.jpg}
+\includegraphics[width=\textwidth]{Review.jpg}
+\includegraphics[width=\textwidth]{Review_text.jpg}
+\includegraphics[width=\textwidth]{Credits.jpg}
+
+\chapter{Conclusion}
+Through this Mini Project I was able to learn (more in depth) and implement Java concepts altogether in multiple program.
+During Semester 2, the concept of this project was implemented using C++ Language.
+The same concept is enhanced,improved and is loaded with additional features - Graphics,Audio and GUI using Java Swing.
+Marvel Avenger's Game has used the Java Swing Concept extensively thus by creating a rich GUI Game for children aged 7-16. 
+Also, I was successful in debugging and solving errors in my program by using concepts learnt in the lectures conducted. 
+This Mini Project can be compiled and runned by JDK 16 and was written with Sublime Text Editor.\\\\
+\textbf{Future Scope : }In the Future, Marvel Avenger's Game is eyeing to add additional Features like a Time factor to Battles using Timer Class, LeaderBoard system and becoming an open source multi-platform game for children aged 7-16 that can be played online as well as available to download(through Github) and play it offline.
+\end{document}
